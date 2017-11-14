@@ -17,7 +17,7 @@ myApp.controller('mainController',['$http',function($http) {
   this.blogs = [];
   console.log(this.blogs);
 
-  this.baseUrl = 'http://ec2-52-77-247-196.ap-southeast-1.compute.amazonaws.com:3000/api/blogs';
+  this.baseUrl = 'https://projectsapi.edwisor.com/api/blogs';
 
 
 
@@ -81,7 +81,7 @@ myApp.controller('singleBlogController',['$http','$routeParams',function($http,$
   console.log(this.blogId);
 
 
-  this.baseUrl = 'http://ec2-52-77-247-196.ap-southeast-1.compute.amazonaws.com:3000/api/blogs';
+  this.baseUrl = 'https://projectsapi.edwisor.com/api/blogs';
 
   this.loadSingeBlog = function(){
    
@@ -127,7 +127,7 @@ myApp.controller('blogCreateController',['$http',function($http) {
   this.pageSubHeading = 'please fill all the data'
  
 
-  this.baseUrl = 'http://ec2-52-77-247-196.ap-southeast-1.compute.amazonaws.com:3000/api/blogs';
+  this.baseUrl = 'https://projectsapi.edwisor.com/api/blogs';
 
   this.createPost = function(){
 
